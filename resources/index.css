@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    /* position: relative; */
+    border: 1px red solid;
+}
+#header {
+    font-size: 60px;
+    color: white;
+}
+#sidetext {
+    font-size: 30px;
+    color: white;
+}
+#introduction {
+    border: 1px red solid;
+    text-align: center;
+}
