@@ -1,7 +1,5 @@
 body{
     background-color: black;
-    /* position: relative; */
-    border: 1px red solid;
 }
 #header {
     font-size: 60px;
@@ -12,6 +10,66 @@ body{
     color: white;
 }
 #introduction {
-    border: 1px red solid;
+/*     border: 1px red solid;
+ */    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#topButtonContainer {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+#buttonContents {
     text-align: center;
+}
+.topButtons {
+    margin: 2%;
+    font-family: 'Lavinia', sans-serif;
+    font-size: larger;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.4s;
+}
+.topButtons:hover {
+    transform: scale(1.3);
+  }
+h1, h2 {
+    font-family: 'Lavinia', sans-serif;
+    font-weight: 100;
+}
+
+.line {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+.lineUp {
+    animation: 5s anim-lineUp;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@font-face {
+    font-family: 'Lavinia';
+    src: url(Lavinia.ttf);
 }
