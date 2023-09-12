@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="site.js"></script>
-    <link rel="stylesheet" href="resources/index.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="socket.js"></script>
+    <script>
+        var socket = new MySocket()
+        socket.connectSocket();
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
   <div id="topButtonContainer">
     <div id="buttonContents">
-    <a href="/"><button class="topButtons lineUp">Home</button></a>
-    <a href="/aboutme"><button class="topButtons lineUp">About Me</button></a>
-    <a href="/projects"><button class="topButtons lineUp">Projects</button></a>
-    <a href="/contact"><button class="topButtons lineUp">Contact</button></a>
+   <button class="topButtons lineUp" onclick="switchPage('intro')">Home</button>
+   <button class="topButtons lineUp" onclick="switchPage('aboutme')">About Me</button>
+   <button class="topButtons lineUp" onclick="switchPage('projects')">Projects</button>
+   <button class="topButtons lineUp" onclick="switchPage('contact')">Contact</button>
   </div>
 </div>
+<!--INTRO PAGE-->
+<section id="introPage">
     <div id="introduction">
       <div class="line">
       <h1 id="header" class="lineUp">I am khpallon</h1>
@@ -25,6 +32,19 @@
     </div>
     <a href="https://www.linkedin.com/in/karl-hannes-pallon-098744252/"><button class="topButtons lineUp">LinkedIn</button></a>
     <a href="https://github.com/khpallon"><button class="topButtons lineUp">Github</button></a>
+  </section>
+  <!--ABOUT ME-->
+    <section id="aboutMePage">
+      <h1 style="color: white;">u made it to aboutme!</h1>
+    </section>
+  <!--PROJECTS-->
+  <section id="projectPage">
+    <h1 style="color: white;">u made it to my projects!</h1>
+  </section>
+  <!--CONTACT-->
+  <section id="contactPage">
+    <h1 style="color: white;">u made it to my contact information!</h1>
+  </section>
 </body>
 </html>
 
