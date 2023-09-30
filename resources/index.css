@@ -2,16 +2,15 @@ body{
     background-color: black;
 }
 #header {
-    font-size: 60px;
-    color: white;
+  font-size: 2.4vw, 2.4vh;
+  color: white;
 }
 #sidetext {
-    font-size: 30px;
-    color: white;
+  font-size: 2vw, 2vh;
+  color: white;
 }
 #introduction {
-/*     border: 1px red solid;
- */    text-align: center;
+    text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -22,10 +21,13 @@ body{
 #buttonContents {
     text-align: center;
 }
+.hide {
+  display: none;
+}
 .topButtons {
     margin: 2%;
     font-family: 'Lavinia', sans-serif;
-    font-size: larger;
+    font-size: 1.7vw, 1.7vh;
     color: white;
     background-color: transparent;
     cursor: pointer;
